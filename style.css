@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Wallpoet&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    overflow: hidden;
+}
+
+.clock-container {
+    background: rgba(255, 255, 255, 0.206);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.305);
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.time-segment {
+    background: rgba(1, 1, 0, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 100px;
+    color: #00ff9f;
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(3, 0, 0, 0.8);
+    transition: transform 0.2s ease;
+}
+
+.time-segment:hover {
+    transform: scale(1.2);
+}
+
+#date {
+    margin-top: 20px;
+    color: #4eb8dd;
+    font-size: 1,2rem;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .time-segment {
+        font-size: 2.5rem;
+        padding: 10px;
+        min-width: 60px;
+    }
+    .clock-container {
+        padding: 20px;
+    }
+}
